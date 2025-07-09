@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --COLOR1: #afa59b;
+  --COLOR2: #d6d2d0;
+  --COLOR3: #cd9409;
+  --COLOR4: #e4c04e;
+  --COLOR5: #70715f;
+  --COLOR6: #ffe74d;
+  --COLOR7: #ffdf26;
+  --COLOR8: #ffd700;
+  --COLOR9: #ffef73;
+  --COLORA: #fffbad;
+  --COLORB: #ffff00;
+}
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url("image/background01.jpg.crdownload");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
+  color: var(--COLORA);
+  font-weight: 500;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.nav-element nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+}
+
+.nav-element nav ul li a {
+  text-decoration: none;
+  color: var(--COLORA);
+  font-weight: 900;
+}
+.nav-element nav ul li a:hover {
+  background-color: var(--COLOR8);
+  transform: scale(1.2);
+  color: black;
+  font-weight: 800;
+  border: 2px solid var(--COLOR8);
+  border-radius: 12%;
+}
+.nav-element nav ul li a:active {
+  text-decoration: underline;
+}
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 2px;
+}
+.welcome h1 {
+  font-size: 64px;
+  color: var(--COLOR7);
+  font-weight: bolder;
+}
+.welcome p {
+  color: var(--COLORA);
+  font-size: 24px;
+}
+.welcome a {
+  display: inline-block;
+  width: 300px;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  background-color: var(--COLOR8);
+  color: black;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.welcome a:hover {
+  background-color: var(--COLOR1);
+  color: var(--COLORB);
+}
+.our-service {
+  background-color: var(--COLORA);
+  background-size: cover;
+}
+.our-service h1 {
+  text-align: center;
+  color: var(--COLOR3);
+  font-size: 64px;
+  font-weight: 900;
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+}
+.service {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.service img {
+  width: 250px;
+  height: 300px;
+  border-radius: 12px;
+}
+.workout {
+  border: 2px solid var(--COLOR1);
+  background-color: var(--COLOR1);
+  border-radius: 12px;
+  text-align: center;
+  color: var(--COLOR8);
+  font-size: 24px;
+  font-weight: 900;
+  transition: transform 0.3s ease;
+}
+.Meal {
+  border: 2px solid var(--COLOR1);
+  background-color: var(--COLOR1);
+  border-radius: 12px;
+  text-align: center;
+  color: var(--COLOR8);
+  font-size: 24px;
+  font-weight: 900;
+  transition: transform 0.3s ease;
+}
+.Progress {
+  border: 2px solid var(--COLOR1);
+  background-color: var(--COLOR1);
+  border-radius: 12px;
+  text-align: center;
+  color: var(--COLOR8);
+  font-size: 24px;
+  font-weight: 900;
+  transition: transform 0.3s ease;
+}
+.Progress:hover {
+  transform: scale(1.23);
+}
+.workout:hover {
+  transform: scale(1.23);
+}
+.Meal:hover {
+  transform: scale(1.2);
+}
+.testimonials {
+  background-color: var(--COLORA); /* or any light background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 48px;
+  color: var(--COLOR3);
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.testimonial {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: scale(1.05);
+}
+
+.testimonial p {
+  font-style: italic;
+  font-size: 18px;
+  color: #444;
+}
+
+.testimonial h4 {
+  margin-top: 15px;
+  font-weight: bold;
+  color: var(--COLOR5);
+}
+footer {
+  width: 100%;
+  background-color: var(--COLOR5);
+  height: 400px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 24px;
+  align-items: center;
+  height: 300px;
+}
+footer p {
+  font-family: "Dancing Script", cursive;
+  font-size: 34px;
+  display: block;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 900;
+}
+.footer-socials a {
+  border: 2px solid var(--COLORA);
+  border-radius: 50%;
+  padding: 10px;
+  color: var(--COLORA);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
