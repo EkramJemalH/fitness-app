@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=Libertinus+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --COLOR1: #afa59b;
   --COLOR2: #d6d2d0;
@@ -110,9 +111,10 @@ header {
 .our-service h1 {
   text-align: center;
   color: var(--COLOR3);
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 900;
   margin-top: 0;
+  padding-top: 24px;
   font-family: "Poppins", sans-serif;
 }
 .service {
@@ -121,23 +123,23 @@ header {
   align-items: center;
 }
 .service img {
-  width: 250px;
-  height: 300px;
+  width: 400px;
+  height: 250px;
   border-radius: 12px;
 }
 .workout {
-  border: 2px solid var(--COLOR1);
-  background-color: var(--COLOR1);
+  border: 2px solid var(--COLORA);
+  background-color: var(--COLORA);
   border-radius: 12px;
   text-align: center;
   color: var(--COLOR8);
   font-size: 24px;
-  font-weight: 900;
   transition: transform 0.3s ease;
+  font-weight: 900;
 }
 .Meal {
-  border: 2px solid var(--COLOR1);
-  background-color: var(--COLOR1);
+  border: 2px solid var(--COLORA);
+  background-color: var(--COLORA);
   border-radius: 12px;
   text-align: center;
   color: var(--COLOR8);
@@ -146,8 +148,8 @@ header {
   transition: transform 0.3s ease;
 }
 .Progress {
-  border: 2px solid var(--COLOR1);
-  background-color: var(--COLOR1);
+  border: 2px solid var(--COLORA);
+  background-color: var(--COLORA);
   border-radius: 12px;
   text-align: center;
   color: var(--COLOR8);
@@ -211,35 +213,112 @@ header {
 footer {
   width: 100%;
   background-color: var(--COLOR5);
-  height: 400px;
+  height: 200px;
   margin-top: 0;
   margin-bottom: 0;
 }
 .footer-socials {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  font-size: 24px;
+  gap: 16px;
+  font-size: 18px;
   align-items: center;
-  height: 300px;
+  height: 80px;
 }
 footer p {
   font-family: "Dancing Script", cursive;
-  font-size: 34px;
-  display: block;
-  margin-top: 0;
+  font-size: 24px;
+  margin: 0;
   text-align: center;
   font-weight: 900;
+  padding-top: 8px;
+  border: 2px solid black;
+  border-radius: 50%;
 }
 .footer-socials a {
   border: 2px solid var(--COLORA);
   border-radius: 50%;
-  padding: 10px;
+  padding: 6px;
   color: var(--COLORA);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
+}
+.aboutpage {
+  background-color: var(--COLORA);
+}
+.about-us {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("image/run.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.about-welcome {
+  font-size: 34px;
+  text-align: center;
+  color: var(--COLOR9);
+  font-family: "Libertinus Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 12px;
+}
+.about-story {
+  display: flex;
+}
+.about-story img {
+  width: 250;
+  height: 400px;
+  margin: 12px;
+}
+.about-story p {
+  width: 900px;
+  height: 500px;
+  font-size: 20px;
+  margin: 12px;
+  font-family: "Poppins", sans-ser;
+}
+.logoabout h1 {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+}
+.coach-header {
+  font-size: 48px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 5px;
+}
+.coach {
+  display: flex;
+  justify-content: space-evenly;
+}
+.coach img {
+  width: 250px;
+  height: 400px;
+}
+.male h4 {
+  text-align: center;
+  font-size: 24px;
+}
+.female h4 {
+  text-align: center;
+  font-size: 24px;
+}
+.social {
+  display: flex;
+  gap: 18px;
+}
+.coach a {
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 6px;
+  color: var(--COLOR1);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
 }
