@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=Libertinus+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libertinus+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --COLOR1: #afa59b;
   --COLOR2: #d6d2d0;
@@ -104,10 +105,6 @@ header {
   background-color: var(--COLOR1);
   color: var(--COLORB);
 }
-.our-service {
-  background-color: var(--COLORA);
-  background-size: cover;
-}
 .our-service h1 {
   text-align: center;
   color: var(--COLOR3);
@@ -128,31 +125,28 @@ header {
   border-radius: 12px;
 }
 .workout {
-  border: 2px solid var(--COLORA);
-  background-color: var(--COLORA);
+  border: 2px solid white;
   border-radius: 12px;
   text-align: center;
-  color: var(--COLOR8);
+  color: var(--COLOR5);
   font-size: 24px;
   transition: transform 0.3s ease;
   font-weight: 900;
 }
 .Meal {
-  border: 2px solid var(--COLORA);
-  background-color: var(--COLORA);
+  border: 2px solid white;
   border-radius: 12px;
   text-align: center;
-  color: var(--COLOR8);
+  color: var(--COLOR5);
   font-size: 24px;
   font-weight: 900;
   transition: transform 0.3s ease;
 }
 .Progress {
-  border: 2px solid var(--COLORA);
-  background-color: var(--COLORA);
+  border: 2px solid white;
   border-radius: 12px;
   text-align: center;
-  color: var(--COLOR8);
+  color: var(--COLOR5);
   font-size: 24px;
   font-weight: 900;
   transition: transform 0.3s ease;
@@ -167,7 +161,6 @@ header {
   transform: scale(1.2);
 }
 .testimonials {
-  background-color: var(--COLORA); /* or any light background */
   padding: 60px 20px;
   text-align: center;
 }
@@ -247,9 +240,7 @@ footer p {
   width: 32px;
   height: 32px;
 }
-.aboutpage {
-  background-color: var(--COLORA);
-}
+
 .about-us {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("image/run.jpg");
@@ -265,46 +256,83 @@ footer p {
   font-style: normal;
   padding-bottom: 12px;
 }
-.about-story {
-  display: flex;
-}
-.about-story img {
-  width: 250;
-  height: 400px;
-  margin: 12px;
-}
 .about-story p {
-  width: 900px;
-  height: 500px;
+  width: 100%;
   font-size: 20px;
-  margin: 12px;
-  font-family: "Poppins", sans-ser;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  text-align: center;
 }
-.logoabout h1 {
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
+.about-story h1 {
+  text-align: center;
+  color: var(--COLOR3);
+  font-size: 48px;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  margin: 12px;
+  padding: 12px;
+}
+.coach {
+  margin-top: 15px;
 }
 .coach-header {
   font-size: 48px;
-  font-family: "Poppins", sans-serif;
+  color: var(--COLOR3);
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
   text-align: center;
-  margin-top: 5px;
 }
-.coach {
+.male {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 12px;
 }
-.coach img {
-  width: 250px;
+
+.male img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.malediv {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.malediv p {
+  width: 100%;
+  height: auto;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.female {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.female img {
+  width: 300px;
   height: 400px;
 }
-.male h4 {
-  text-align: center;
-  font-size: 24px;
+.femalediv {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
 }
-.female h4 {
-  text-align: center;
-  font-size: 24px;
+.femalediv p {
+  width: 100%;
+  height: auto;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  line-height: 1.6;
 }
 .social {
   display: flex;
@@ -321,4 +349,24 @@ footer p {
   justify-content: center;
   width: 32px;
   height: 32px;
+}
+.clientsshow {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--COLOR3);
+  height: 200px;
+}
+.client1 h1 {
+  font-size: 40px;
+}
+.vline {
+  width: 2px;
+  height: 150px;
+  background-color: black;
+}
+.client2 h1 {
+  font-size: 40px;
+}
+.client3 h1 {
+  font-size: 40px;
 }
