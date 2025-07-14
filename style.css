@@ -452,3 +452,51 @@ footer p {
   border: none;
   cursor: pointer;
 }
+.workoutplan {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url("image/background01.jpg.crdownload");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+.workoutschedule {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 24px;
+}
+
+.workoutvariation {
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.workoutvariation:hover {
+  transform: translateY(-5px);
+}
+
+.workoutvariation img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.workoutvariation h3 {
+  margin: 15px 0 5px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.workoutvariation p {
+  font-size: 0.95rem;
+  padding: 0 10px 15px;
+  color: #555;
+}
